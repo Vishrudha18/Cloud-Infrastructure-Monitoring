@@ -8,20 +8,30 @@ The platform automates application deployment through a CI/CD pipeline and hosts
 
 ---
 
-## Architecture
+## Architecture Diagram
 
+```text
+Developer
+    │
+    ▼
 GitHub Repository
-        ↓
+    │
+    ▼
 Jenkins Pipeline
-        ↓
-Docker Image Build
-        ↓
-Docker Container Deployment
-        ↓
+    │
+    ├── Clone Repository
+    ├── Build Docker Image
+    └── Deploy Container
+    │
+    ▼
+Docker Container
+    │
+    ▼
 AWS EC2 Instance
-        ↓
+    │
+    ▼
 Web Application
-
+```
 ---
 
 ## Features
@@ -127,6 +137,28 @@ Application is deployed on:
 - Jenkins Automated Pipeline
 
 ---
+
+## Project Screenshots
+
+### Jenkins Dashboard
+
+![Jenkins Dashboard](screenshots/Jenkins%20Dashboard.png)
+
+### Successful Jenkins Build
+
+![Successful Build](screenshots/Successful%20Jenkins%20Build.png)
+
+### Docker Container Running
+
+![Docker Container](screenshots/Docker%20Container%20Running%20(docker%20ps).png)
+
+### AWS EC2 Console
+
+![AWS EC2](screenshots/AWS%20EC2%20Console.png)
+
+### Project Website
+
+![Website](screenshots/Project%20Website.png)
 
 ## Learning Outcomes
 
