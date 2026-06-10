@@ -6,6 +6,8 @@ This project demonstrates a complete DevOps workflow using AWS, Jenkins, Docker,
 
 The platform automates application deployment through a CI/CD pipeline and hosts the application inside Docker containers running on AWS EC2.
 
+An end-to-end DevOps project demonstrating Infrastructure Automation, Continuous Integration, Continuous Deployment, and Real-Time Monitoring using AWS EC2, Jenkins, Docker, Prometheus, Node Exporter, and Grafana.
+
 ---
 
 ## Architecture Diagram
@@ -31,18 +33,28 @@ AWS EC2 Instance
     │
     ▼
 Web Application
+    │
+    ▼
+Node Exporter 
+    │
+    ▼
+Prometheus
+    │
+    ▼
+Grafana DashBoard
 ```
 ---
 
 ## Features
 
-- Source Code Management using GitHub
-- Continuous Integration using Jenkins
-- Automated Docker Image Build
-- Automated Container Deployment
-- AWS EC2 Hosting
+- Automated CI/CD Pipeline 
+- Dockerized Application Deployment 
+- AWS Cloud Hosting 
+- Infrastructure Monitoring 
+- Real-Time CPU, Memory & Disk Analytics 
+- Prometheus Metrics Collection 
+- Grafana Visualization 
 - Linux Server Administration
-- End-to-End CI/CD Pipeline
 
 ---
 
@@ -54,8 +66,14 @@ Web Application
 ### DevOps Tools
 - Jenkins
 - Docker
+- Terraform
 - Git
 - GitHub
+
+### Monitoring
+- Prometheus 
+- Node Exporter 
+- Grafana
 
 ### Operating System
 - Ubuntu Linux
