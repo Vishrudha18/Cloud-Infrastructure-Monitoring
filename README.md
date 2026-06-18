@@ -84,6 +84,18 @@ Grafana DashBoard
 
 ---
 
+## Infrastructure Provisioning
+
+Terraform was used to provision AWS EC2 infrastructure automatically.
+
+### Terraform Workflow
+
+1. Define infrastructure in main.tf
+2. Run terraform init
+3. Run terraform plan
+4. Run terraform apply
+5. EC2 instance created automatically
+
 ## CI/CD Workflow
 
 1. Developer pushes code to GitHub.
@@ -177,6 +189,14 @@ Application is deployed on:
 ### Project Website
 
 ![Website](screenshots/Project%20Website.png)
+
+### Prometheus
+
+![Prometheus](screenshots/Prometheus.png)
+
+### Grafana Dashboard
+
+![Grafana Dashboard](screenshots/Grafana%20Dashboard.png)
 
 ## Learning Outcomes
 
